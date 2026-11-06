@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Modern Gradient Canvas Background -->
+    <linearGradient id="feCanvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="40%" stop-color="#0a1226" />
+      <stop offset="80%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#050a1a" />
+    </linearGradient>
+
+    <!-- Vibrant UI Gradients -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <linearGradient id="cardDarkGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(15, 23, 42, 0.92)" />
+      <stop offset="100%" stop-color="rgba(3, 7, 18, 0.96)" />
+    </linearGradient>
+
+    <filter id="animGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep Workspace Canvas -->
+  <rect width="800" height="500" fill="url(#feCanvasBg)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="180" r="160" fill="#38bdf8" opacity="0.12" filter="url(#animGlow)" />
+  <circle cx="620" cy="240" r="180" fill="#a855f7" opacity="0.14" filter="url(#animGlow)" />
+  <circle cx="400" cy="420" r="140" fill="#06b6d4" opacity="0.08" filter="url(#animGlow)" />
+
+  <!-- Studio Browser Mockup Frame (Mac Style) -->
+  <g transform="translate(60, 40)">
+    <!-- Browser Window Shadow & Shell -->
+    <rect width="680" height="420" rx="16" fill="url(#cardDarkGlass)" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1.5" />
+    
+    <!-- Window Header Controls Bar -->
+    <rect width="680" height="40" rx="16" fill="rgba(15, 23, 42, 0.95)" />
+    <circle cx="22" cy="20" r="5" fill="#ef4444" />
+    <circle cx="38" cy="20" r="5" fill="#f59e0b" />
+    <circle cx="54" cy="20" r="5" fill="#10b981" />
+
+    <!-- Browser URL Bar Pill -->
+    <rect x="180" y="9" width="320" height="22" rx="6" fill="#030712" stroke="rgba(56, 189, 248, 0.2)" stroke-width="0.8" />
+    <text x="340" y="24" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#38bdf8" text-anchor="middle">
+      https://animated-project-three.vercel.app/
+    </text>
+
+    <!-- Top Status Badge -->
+    <rect x="530" y="9" width="130" height="22" rx="6" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-width="0.8" />
+    <text x="595" y="24" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#38bdf8" text-anchor="middle">⚡ VERCEL LIVE</text>
+
+    <!-- Browser Body: Interactive Web Page Content -->
+    <!-- Hero Header within Browser -->
+    <g transform="translate(40, 65)">
+      <!-- Animated Tag Badge -->
+      <rect width="145" height="22" rx="11" fill="rgba(168, 85, 247, 0.15)" stroke="#a855f7" stroke-width="1" />
+      <text x="72" y="15" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#c084fc" text-anchor="middle">✨ NEXT-GEN FRONTEND</text>
+
+      <!-- Main Animated Hero Title -->
+      <text x="0" y="55" font-family="'Montserrat', sans-serif" font-size="24" font-weight="900" fill="url(#purpleGrad)">
+        Interactive 3D Motion &amp;
+      </text>
+      <text x="0" y="85" font-family="'Montserrat', sans-serif" font-size="24" font-weight="900" fill="#ffffff">
+        High-Engagement UI
+      </text>
+
+      <!-- Subtitle Description -->
+      <text x="0" y="112" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">
+        Crafted with kinetic typography, physics-based springs, and fluid page transitions.
+      </text>
+
+      <!-- CTA Button Mockup -->
+      <rect x="0" y="128" width="120" height="32" rx="16" fill="url(#purpleGrad)" filter="url(#animGlow)" />
+      <text x="60" y="148" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#030712" text-anchor="middle">Launch Experience</text>
+    </g>
+
+    <!-- Right Side: 3D Floating Interactive Card Stack & Physics Orb -->
+    <g transform="translate(380, 65)">
+      <!-- Animated Waveform Graphic -->
+      <rect x="20" y="10" width="240" height="150" rx="14" fill="rgba(30, 41, 59, 0.6)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.2" />
+      
+      <!-- Interactive Grid Mesh on Card -->
+      <g stroke="#38bdf8" stroke-width="0.5" opacity="0.25">
+        <line x1="40" y1="30" x2="240" y2="30" />
+        <line x1="40" y1="60" x2="240" y2="60" />
+        <line x1="40" y1="90" x2="240" y2="90" />
+        <line x1="40" y1="120" x2="240" y2="120" />
+      </g>
+
+      <!-- Kinetic Fluid Sine Waves -->
+      <path d="M 40 100 Q 80 40 120 85 T 180 75 T 240 60" fill="none" stroke="url(#purpleGrad)" stroke-width="3" filter="url(#animGlow)" />
+      <path d="M 40 115 Q 90 70 140 110 T 200 80 T 240 95" fill="none" stroke="url(#emeraldGrad)" stroke-width="2" />
+
+      <!-- Floating 3D Micro-card 1 -->
+      <rect x="-30" y="90" width="130" height="70" rx="10" fill="rgba(10, 15, 30, 0.95)" stroke="#38bdf8" stroke-width="1.2" filter="url(#animGlow)" />
+      <circle cx="-10" cy="115" r="8" fill="#10b981" />
+      <text x="8" y="118" font-family="'Montserrat', sans-serif" font-size="11" font-weight="800" fill="#ffffff">60 FPS</text>
+      <text x="-10" y="142" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8">HARDWARE ACCEL</text>
+    </g>
+
+    <!-- Bottom Feature Metric Cards within Window -->
+    <g transform="translate(40, 245)">
+      <!-- Metric Box 1 -->
+      <rect width="180" height="90" rx="10" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(56, 189, 248, 0.2)" stroke-width="1" />
+      <text x="16" y="24" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#94a3b8">FRAMER MOTION</text>
+      <text x="16" y="52" font-family="'Montserrat', sans-serif" font-size="16" font-weight="800" fill="#38bdf8">Spring Physics</text>
+      <text x="16" y="74" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#34d399">✓ Micro-Interactions</text>
+
+      <!-- Metric Box 2 -->
+      <rect x="210" width="180" height="90" rx="10" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(168, 85, 247, 0.2)" stroke-width="1" />
+      <text x="226" y="24" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#94a3b8">UI/UX ACCESSIBILITY</text>
+      <text x="226" y="52" font-family="'Montserrat', sans-serif" font-size="16" font-weight="800" fill="#c084fc">Fluid Responsive</text>
+      <text x="226" y="74" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#38bdf8">✓ Mobile Touch Ready</text>
+
+      <!-- Metric Box 3 -->
+      <rect x="420" width="180" height="90" rx="10" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(16, 185, 129, 0.2)" stroke-width="1" />
+      <text x="436" y="24" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#94a3b8">DEPLOYMENT</text>
+      <text x="436" y="52" font-family="'Montserrat', sans-serif" font-size="16" font-weight="800" fill="#34d399">Production Edge</text>
+      <text x="436" y="74" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#38bdf8">✓ Instant CDN Load</text>
+    </g>
+  </g>
+</svg>
+

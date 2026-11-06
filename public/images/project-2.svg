@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#141c2e" />
+    </linearGradient>
+    <linearGradient id="groqGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#aiBg)" />
+  <rect x="1" y="1" width="598" height="378" rx="15" fill="none" stroke="#25334d" stroke-width="1.5" />
+
+  <!-- App Header Bar -->
+  <rect x="25" y="25" width="550" height="35" rx="10" fill="#1e293b" />
+  <circle cx="48" cy="42" r="5" fill="#ef4444" />
+  <circle cx="66" cy="42" r="5" fill="#f59e0b" />
+  <circle cx="84" cy="42" r="5" fill="#10b981" />
+  <text x="300" y="47" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#94a3b8" text-anchor="middle">Recruit AI | Multi-Modal Interview Simulation &amp; Groq LPU Vector Pipeline</text>
+
+  <!-- Left: Candidate Screen & Audio Waveform -->
+  <g transform="translate(40, 75)">
+    <rect width="240" height="270" rx="10" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+    <!-- Candidate Video Frame -->
+    <rect x="15" y="15" width="210" height="130" rx="8" fill="#1f2937" />
+    <circle cx="120" cy="65" r="28" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-width="2" />
+    <circle cx="120" cy="58" r="12" fill="#38bdf8" />
+    <path d="M102 82 C102 74, 110 70, 120 70 C130 70, 138 74, 138 82 Z" fill="#38bdf8" />
+    <rect x="25" y="120" width="70" height="18" rx="4" fill="#0f172a" fill-opacity="0.8" />
+    <text x="60" y="132" font-family="'Inter', sans-serif" font-size="8" font-weight="700" fill="#10b981" text-anchor="middle">LIVE CAM</text>
+
+    <!-- Speech / Audio Waveform -->
+    <text x="15" y="165" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#94a3b8">Voice Vector Streaming (Groq API)</text>
+    <g transform="translate(15, 175)">
+      <line x1="10" y1="20" x2="10" y2="4" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="25" y1="20" x2="25" y2="0" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="40" y1="20" x2="40" y2="8" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="55" y1="20" x2="55" y2="2" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="70" y1="20" x2="70" y2="12" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="85" y1="20" x2="85" y2="0" stroke="#818cf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="100" y1="20" x2="100" y2="6" stroke="#818cf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="115" y1="20" x2="115" y2="14" stroke="#818cf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="130" y1="20" x2="130" y2="2" stroke="#818cf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="145" y1="20" x2="145" y2="10" stroke="#818cf8" stroke-width="3" stroke-linecap="round" />
+      <line x1="160" y1="20" x2="160" y2="5" stroke="#34d399" stroke-width="3" stroke-linecap="round" />
+      <line x1="175" y1="20" x2="175" y2="1" stroke="#34d399" stroke-width="3" stroke-linecap="round" />
+      <line x1="190" y1="20" x2="190" y2="8" stroke="#34d399" stroke-width="3" stroke-linecap="round" />
+    </g>
+    <text x="15" y="225" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981">Inference Latency: 120ms</text>
+    <text x="15" y="245" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">Vector Distance: Cosine 0.94</text>
+  </g>
+
+  <!-- Right: Real-Time AI Scoring & Feedback -->
+  <g transform="translate(300, 75)">
+    <rect width="260" height="270" rx="10" fill="#111827" stroke="#1f2937" stroke-width="1.5" />
+    <text x="18" y="30" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#f8fafc">Automated Feedback &amp; Score</text>
+    
+    <!-- Big Score Gauge -->
+    <rect x="18" y="45" width="224" height="60" rx="8" fill="#1e293b" />
+    <text x="32" y="72" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Overall Competency Score</text>
+    <text x="32" y="94" font-family="'Montserrat', sans-serif" font-size="18" font-weight="900" fill="#38bdf8">92 / 100</text>
+    <text x="145" y="92" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#34d399">✓ Highly Recommended</text>
+
+    <!-- Score Breakdown Bars -->
+    <g transform="translate(18, 120)">
+      <text x="0" y="10" font-family="'Inter', sans-serif" font-size="9.5" fill="#cbd5e1">Technical Accuracy (Flask / SQL)</text>
+      <text x="220" y="10" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#38bdf8" text-anchor="end">95%</text>
+      <rect x="0" y="15" width="224" height="5" rx="2.5" fill="#1f2937" />
+      <rect x="0" y="15" width="212" height="5" rx="2.5" fill="#38bdf8" />
+
+      <text x="0" y="35" font-family="'Inter', sans-serif" font-size="9.5" fill="#cbd5e1">Communication Clarity</text>
+      <text x="220" y="35" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#818cf8" text-anchor="end">88%</text>
+      <rect x="0" y="40" width="224" height="5" rx="2.5" fill="#1f2937" />
+      <rect x="0" y="40" width="197" height="5" rx="2.5" fill="#818cf8" />
+
+      <text x="0" y="60" font-family="'Inter', sans-serif" font-size="9.5" fill="#cbd5e1">Problem Solving &amp; Logic</text>
+      <text x="220" y="60" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#34d399" text-anchor="end">92%</text>
+      <rect x="0" y="65" width="224" height="5" rx="2.5" fill="#1f2937" />
+      <rect x="0" y="65" width="206" height="5" rx="2.5" fill="#34d399" />
+    </g>
+
+    <!-- AI Suggestion Bubble -->
+    <rect x="18" y="205" width="224" height="48" rx="6" fill="#1e293b" stroke="#334155" />
+    <text x="28" y="224" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">Groq AI Recommendation:</text>
+    <text x="28" y="240" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#38bdf8">Demonstrates exceptional full-stack fluency.</text>
+  </g>
+</svg>

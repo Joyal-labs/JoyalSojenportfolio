@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="aboutHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="70%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+    <linearGradient id="aboutSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e2b998" />
+      <stop offset="100%" stop-color="#c59876" />
+    </linearGradient>
+    <linearGradient id="aboutHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e242d" />
+      <stop offset="100%" stop-color="#0a0c10" />
+    </linearGradient>
+  </defs>
+
+  <rect width="320" height="320" rx="160" fill="url(#aboutHalo)" stroke="#38bdf8" stroke-width="3" stroke-dasharray="10,6" />
+
+  <!-- Avatar body -->
+  <g transform="translate(10, 5)">
+    <!-- Shoulders -->
+    <path d="M75 270 C75 210, 110 185, 150 185 C190 185, 225 210, 225 270 L235 315 L65 315 Z" fill="#181a20" stroke="#334155" stroke-width="2" />
+    <!-- Neck -->
+    <path d="M136 145 L136 195 C142 200, 158 200, 164 195 L164 145 Z" fill="url(#aboutSkin)" />
+    <!-- Head -->
+    <ellipse cx="150" cy="120" rx="38" ry="46" fill="url(#aboutSkin)" />
+    <!-- Stubble -->
+    <path d="M116 115 Q118 155, 150 164 Q182 155, 184 115 Q186 142, 172 158 Q150 168, 128 158 Q114 142, 116 115 Z" fill="#1b1d24" opacity="0.8" />
+    <!-- Hair -->
+    <path d="M110 102 C106 65, 135 52, 152 52 C178 52, 194 68, 190 102 C186 90, 175 80, 150 80 C125 80, 114 90, 110 102 Z" fill="url(#aboutHair)" />
+    <!-- Glasses -->
+    <g stroke="#38bdf8" stroke-width="2" fill="none">
+      <rect x="122" y="106" width="24" height="18" rx="4" />
+      <rect x="154" y="106" width="24" height="18" rx="4" />
+      <path d="M146 114 L154 114" />
+    </g>
+    <!-- Eyes -->
+    <circle cx="134" cy="115" r="3" fill="#111827" />
+    <circle cx="166" cy="115" r="3" fill="#111827" />
+    <!-- Smile -->
+    <path d="M140 144 Q150 150, 160 144" stroke="#8c5839" stroke-width="2" stroke-linecap="round" fill="none" />
+  </g>
+</svg>
+
